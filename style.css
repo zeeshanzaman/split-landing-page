@@ -101,10 +101,21 @@ h1 {
     background-color: var(--right-bg-color);
 }
 
+.split.right,
+.split-left,
+.spilt.right::before,
+.split.left::before {
+    transition: all var(--speed) ease-in-out;
+}
+
 .hover-left .left {
     width: var(--hover-width);
 }
 
 .hover-left .right {
     width: var(--other-width);
+}
+
+.hover-right .right {
+    width: var(--hover-width);
 }
